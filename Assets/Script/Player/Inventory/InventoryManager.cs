@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using static UnityEditor.Progress;
 
 public class InventoryManager : MonoBehaviour
@@ -10,16 +11,26 @@ public class InventoryManager : MonoBehaviour
     private bool menuActive;
     public GameObject inventory;
     public GameObject inventorySlot;
-    public int inventorySize { get; private set; } = 35;
+    public int inventorySize  = 40;
     public InventorySlot prefabSlot;
     public List<InventorySlot> listOfUIItems = new List<InventorySlot>();
-    public event Action<Dictionary<int, InventorySlot>> OnInventoryUpdated;
+
+
     private void Start()
     {
 
         initInventory();
         PrePareData();
     }
+
+    internal void ResetSelectItems()
+    {
+        foreach (var item in listOfUIItems)
+        {
+            item.DeSelect();
+        }
+    }
+
 
 
     public void initInventory()
@@ -30,13 +41,40 @@ public class InventoryManager : MonoBehaviour
         for (int i = 0; i < inventorySize; i++)
         {
             InventorySlot slot = Instantiate(prefabSlot, Vector3.zero, Quaternion.identity);
+            slot.pointClickEvent += handleOnclickItem;
             listOfUIItems.Add(slot);
             slot.transform.SetParent(inventorySlot.transform);
         }
     }
+
+
+
+    private void handleOnclickItem(InventorySlot data)
+    {
+        int index = listOfUIItems.IndexOf(data);
+        if (index == -1)
+            return;
+
+        ResetSelectItems();
+        listOfUIItems[index].select();
+        Debug.Log("click");
+    }
+
     public void PrePareData()
     {
        
+    }
+
+    public void OpenDetailUI()
+    {
+        GameObject go = GameObject.Find("InventoryDescription").gameObject;
+        go.active = true;
+    }
+
+    public void CloseDetailUI()
+    {
+        GameObject go = GameObject.Find("InventoryDescription").gameObject;
+        go.active = false;
     }
 
     public void AddItem(ItemModel item,int quantity)
@@ -52,6 +90,7 @@ public class InventoryManager : MonoBehaviour
 
        
     }
+
 
     private bool InventoryFull() => listOfUIItems.Where(item => item.isEmpty).Any() == false;
 

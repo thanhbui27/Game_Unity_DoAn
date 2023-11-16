@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,9 @@ public class Item : MonoBehaviour
 
 
     private InventoryManager InventoryManager;
+
+    public Action<Event> pointClickEvent, pointClickRight;
+
     void Start()
     {
         InventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
@@ -51,5 +55,6 @@ public class Item : MonoBehaviour
         }
         Destroy(gameObject);
     }
+
 
 }
