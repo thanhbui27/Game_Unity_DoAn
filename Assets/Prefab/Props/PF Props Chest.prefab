@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2055102311959635375}
   - component: {fileID: 2055102311959635368}
   - component: {fileID: 2055102311959635374}
+  - component: {fileID: -6624538625640766906}
   m_Layer: 20
   m_Name: PF Props Chest
   m_TagString: Untagged
@@ -115,10 +116,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.002523899, y: 0.1523566}
+  m_Offset: {x: -0.002523899, y: 0.072877645}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -129,8 +130,22 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.33115673, y: 0.3047132}
+  m_Size: {x: 0.33115673, y: 0.14575529}
   m_EdgeRadius: 0
+--- !u!114 &-6624538625640766906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055102311959635369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60a1d5ffff628048a64714d2962ed20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300040, guid: 29c9cded5e558164aaf8c9bf08aa1510, type: 3}
+  stoneMagic: {fileID: 0}
 --- !u!1 &2055102312182832482
 GameObject:
   m_ObjectHideFlags: 0

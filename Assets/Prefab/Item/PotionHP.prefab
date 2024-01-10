@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 587899311
-  m_SortingLayer: 1
+  m_SortingLayerID: 695411331
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: f03f291cf025dc34e8d609ef453f68fc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -98,7 +98,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93453daa6bbbfa7468713135c4b8393d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventoryItem: {fileID: 11400000, guid: 97e411c9f2c5c97468a31d3cbd64d908, type: 2}
+  InventoryItem:
+    IsStackable: 1
+    ID: 2
+    MaxStackSize: 100
+    Name: HP
+    HP: 10
+    Mana: 0
+    Armor: 0
+    dame: 0
+    Speed: 0
+    type: 2
+    Description: "H\u1ED3i 1 \xEDt Hp"
+    ItemImage: {fileID: 21300000, guid: f03f291cf025dc34e8d609ef453f68fc, type: 3}
   quantity: 1
   duration: 0.3
 --- !u!58 &4911184407511862794

@@ -1,0 +1,204 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: idle
+    m_Hash: 472167701
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: tyrannosaurus-1_0
+      m_Hash: 363581750
+      m_Sprite: {fileID: 2074596434, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 1475555826, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_1
+      m_Hash: 581755296
+      m_Sprite: {fileID: -2125951118, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 406445074, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_2
+      m_Hash: 1000714266
+      m_Sprite: {fileID: -1018943208, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -1352661298, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_3
+      m_Hash: 211976332
+      m_Sprite: {fileID: -734966599, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -1113791774, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_4
+      m_Hash: 314971439
+      m_Sprite: {fileID: -923023450, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -928061696, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_5
+      m_Hash: 633415097
+      m_Sprite: {fileID: -412758977, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 243957179, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 6
+  - m_Name: attack
+    m_Hash: 130035003
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: tyrannosaurus-1_14
+      m_Hash: 633476145
+      m_Sprite: {fileID: -456005354, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 811053697, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_15
+      m_Hash: 314909863
+      m_Sprite: {fileID: 182589977, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -934023463, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_16
+      m_Hash: 197948701
+      m_Sprite: {fileID: -87485681, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -725185258, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_17
+      m_Hash: 1019954571
+      m_Sprite: {fileID: -1538580923, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -134957649, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_18
+      m_Hash: 745822234
+      m_Sprite: {fileID: 795754296, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -1750311, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 5
+  - m_Name: run
+    m_Hash: 276210880
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: tyrannosaurus-1_6
+      m_Hash: 1019769859
+      m_Sprite: {fileID: -412758977, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -770923290, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_7
+      m_Hash: 198132885
+      m_Sprite: {fileID: 1184670068, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -1390784054, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_8
+      m_Hash: 460347652
+      m_Sprite: {fileID: 445485642, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 1043434832, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_9
+      m_Hash: 746023314
+      m_Sprite: {fileID: 1768278413, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -962452860, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_10
+      m_Hash: 581947432
+      m_Sprite: {fileID: -201879497, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -1422366875, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_11
+      m_Hash: 363389118
+      m_Sprite: {fileID: -1142899818, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 243957179, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_12
+      m_Hash: 211923204
+      m_Sprite: {fileID: -456005354, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -770923290, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_13
+      m_Hash: 1000767890
+      m_Sprite: {fileID: 445485642, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -1390784054, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 8
+  - m_Name: hit
+    m_Hash: 449979969
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: tyrannosaurus-1_19
+      m_Hash: 460548236
+      m_Sprite: {fileID: -783677607, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 1475555826, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_20
+      m_Hash: 159548395
+      m_Sprite: {fileID: 1061335796, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 811053697, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_21
+      m_Hash: 1048949629
+      m_Sprite: {fileID: -154127139, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -934023463, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_22
+      m_Hash: 663544519
+      m_Sprite: {fileID: 199760448, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 671417081, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 4
+  - m_Name: die
+    m_Hash: 964231127
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: tyrannosaurus-1_21
+      m_Hash: 1048949629
+      m_Sprite: {fileID: 795754296, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 844535912, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_22
+      m_Hash: 663544519
+      m_Sprite: {fileID: 1061335796, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -191568405, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    - m_Name: tyrannosaurus-1_23
+      m_Hash: 277598801
+      m_Sprite: {fileID: -838746272, guid: b470ba195b631174daf90cb2c8fa2de0, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -623040021, guid: ec1bd9bb41b06a54ebf44f1a3f93beef,
+        type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 3
+  m_PrimaryLibraryGUID: dc8c0f0e1279bb14ea09c7f291689941
+  m_ModificationHash: 638393382480357647
+  m_Version: 1

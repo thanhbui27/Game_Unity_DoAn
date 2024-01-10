@@ -1,12 +1,12 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
 public class Item : MonoBehaviour
 {
     public ItemModel InventoryItem;
+
     public int quantity;
 
     [SerializeField]
@@ -27,9 +27,9 @@ public class Item : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if( collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-            InventoryManager.AddItem(InventoryItem,quantity);
+            InventoryManager.AddItem(InventoryItem, quantity);
             DestroyItem();
         }
     }
@@ -42,7 +42,6 @@ public class Item : MonoBehaviour
     }
     private IEnumerator AnimateItemPickup()
     {
-        //audioSource.Play();
         Vector3 startScale = transform.localScale;
         Vector3 endScale = Vector3.zero;
         float currentTime = 0;

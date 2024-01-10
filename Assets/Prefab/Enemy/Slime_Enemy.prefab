@@ -298,7 +298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1062934293790817737}
   - component: {fileID: 14862161328045576}
-  - component: {fileID: 1921156150316724990}
+  - component: {fileID: 3092780648794070552}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Enemy
@@ -378,7 +378,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1921156150316724990
+--- !u!114 &3092780648794070552
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5508077125515570188}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53b4638a767a43f4fad18f513726ad09, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9ea0b342bed054cbe1513b0d350e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 14862161328045576}
@@ -589,4 +589,6 @@ MonoBehaviour:
   - {fileID: 5085177692229385534, guid: 58f6500a62e68124a886eea7f7ec0626, type: 3}
   - {fileID: 9210982322622148407, guid: b94a13840732f324aa065eff2e026a25, type: 3}
   - {fileID: 8823090644306060715, guid: 18d0dd4688c27984b9ee3e4dbd44cd7f, type: 3}
+  _level: 1
   _dame: 4
+  _exp: 3

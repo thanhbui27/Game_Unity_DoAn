@@ -187,7 +187,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   speed: 80
   chaseDistanceThreshold: 1
-  attackDistanceThreshold: 0.12
+  attackDistanceThreshold: 0.21
   _heath: 10
   _maxHp: 10
   attackDelay: 1
@@ -198,7 +198,9 @@ MonoBehaviour:
   - {fileID: 5085177692229385534, guid: 58f6500a62e68124a886eea7f7ec0626, type: 3}
   - {fileID: 8823090644306060715, guid: 18d0dd4688c27984b9ee3e4dbd44cd7f, type: 3}
   - {fileID: 9210982322622148407, guid: b94a13840732f324aa065eff2e026a25, type: 3}
+  _level: 1
   _dame: 5
+  _exp: 3
 --- !u!1 &1440138102310868063
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,7 +361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6666912421718695106}
   - component: {fileID: 6034473015496905746}
-  - component: {fileID: 4514724409236178548}
+  - component: {fileID: 294175865888060320}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Enemy
@@ -439,7 +441,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &4514724409236178548
+--- !u!114 &294175865888060320
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -448,7 +450,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6204290791107099387}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53b4638a767a43f4fad18f513726ad09, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9ea0b342bed054cbe1513b0d350e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 6034473015496905746}

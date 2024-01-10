@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 public class TextMeshDame : MonoBehaviour
@@ -25,12 +22,12 @@ public class TextMeshDame : MonoBehaviour
     {
         TimeELapsed += Time.deltaTime;
 
-        rectTransform.position += v3 * speed *  Time.deltaTime;
+        rectTransform.position += v3 * speed * Time.deltaTime;
 
         if (TimeELapsed > TimeToLive)
         {
             Destroy(gameObject);
         }
     }
-   
+
 }

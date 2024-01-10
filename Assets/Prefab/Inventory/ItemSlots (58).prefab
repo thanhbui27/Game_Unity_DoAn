@@ -390,7 +390,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 487126928658685283}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 380819997407180283}
+        m_TargetAssemblyTypeName: InventorySlot, Assembly-CSharp
+        m_MethodName: useItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2108433886071384495
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,9 +961,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6221086462423135281}
   - {fileID: 6721807473507780914}
   - {fileID: 3786841482059235112}
+  - {fileID: 6221086462423135281}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1015,6 +1027,8 @@ MonoBehaviour:
   image: {fileID: 4230969342619616398}
   borderImage: {fileID: 4122474512676457169}
   panelSelectOption: {fileID: 2368051862937035397}
+  inventoryDescription: {fileID: 7317442635054519082, guid: 444709b8d5fbaca4da4fddf652e55227,
+    type: 3}
 --- !u!114 &268198503769914522
 MonoBehaviour:
   m_ObjectHideFlags: 0
