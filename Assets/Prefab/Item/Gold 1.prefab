@@ -136,7 +136,7 @@ MonoBehaviour:
   InventoryItem:
     IsStackable: 1
     ID: 50
-    MaxStackSize: 0
+    MaxStackSize: 99
     Name: "Th\u1EA1ch anh t\xEDm"
     HP: 0
     Mana: 0

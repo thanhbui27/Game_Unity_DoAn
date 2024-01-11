@@ -4,7 +4,7 @@ public class Chest : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     public Sprite img;
-
+    public GameObject Mimic;
     public GameObject stoneMagic;
     private void Start()
     {
@@ -12,15 +12,24 @@ public class Chest : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!img.name.Equals(spriteRenderer.sprite.name))
+        if (stoneMagic != null)
         {
-            if (collision.tag == "Player" && collision.name == "Player")
+            if (!img.name.Equals(spriteRenderer.sprite.name))
             {
-                Debug.Log("mo ruong");
-                spriteRenderer.sprite = img;
-                Instantiate(stoneMagic, transform.position, Quaternion.identity);
+                if (collision.tag == "Player" && collision.name == "Player")
+                {
+                    Debug.Log("mo ruong");
+                    spriteRenderer.sprite = img;
+                    Instantiate(stoneMagic, transform.position, Quaternion.identity);
+                }
             }
         }
+        else
+        {
+            Instantiate(Mimic, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+
 
     }
 }

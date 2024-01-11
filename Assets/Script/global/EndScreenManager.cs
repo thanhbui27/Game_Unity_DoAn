@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class EndScreenManager : MonoBehaviour
 {
@@ -35,6 +34,12 @@ public class EndScreenManager : MonoBehaviour
         }
     }
 
+    public void NewGame()
+    {
+        Time.timeScale = 1;
+        DataSaveGameManager.instance.NewGame();
+    }
+
     public void ToggleUiAudioSetting()
     {
         if (!UISetting.active)
@@ -49,8 +54,15 @@ public class EndScreenManager : MonoBehaviour
         }
     }
 
+    public void CloseUi()
+    {
+        Time.timeScale = 1;
+        Destroy(gameObject.transform.parent.gameObject);
+    }
+
     public void ExitGame()
     {
-        SceneManager.LoadScene(6);
+        Time.timeScale = 1.0f;
+        Application.Quit();
     }
 }

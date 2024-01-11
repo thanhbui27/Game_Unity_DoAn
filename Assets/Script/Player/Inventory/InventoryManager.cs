@@ -206,6 +206,7 @@ public class InventoryManager : MonoBehaviour, IDataSaveGame
 
     public void LoadData(GameData gameData)
     {
+
         for (int i = 0; i < gameData.player.itemToBag.Count; i++)
         {
             if (gameData.player.itemToBag[i].isEmpty != true)

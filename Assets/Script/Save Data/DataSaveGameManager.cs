@@ -15,7 +15,7 @@ public class DataSaveGameManager : MonoBehaviour
     public static DataSaveGameManager instance { get; private set; }
 
     [Header("Auto Saving Configuration")]
-    [SerializeField] private float autoSaveTimeSeconds = 60f;
+    [SerializeField] private float autoSaveTimeSeconds = 10f;
 
     public List<IDataSaveGame> dataSaveGames;
     private Coroutine autoSaveCoroutine;
@@ -23,13 +23,13 @@ public class DataSaveGameManager : MonoBehaviour
     {
         if (instance != null)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
             Debug.Log("instance is exist");
             return;
         }
         instance = this;
 
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(gameObject);
 
         savefile = new SaveFile(Application.persistentDataPath, fileName);
 
@@ -63,6 +63,8 @@ public class DataSaveGameManager : MonoBehaviour
         this.gameData = new GameData();
         this.gameData.player.initItemBody();
         this.gameData.player.initItemToBag();
+        savefile.RemoveFile();
+        savefile.SaveGame(gameData);
         SceneManager.LoadScene(1);
     }
     public void LoadGame()

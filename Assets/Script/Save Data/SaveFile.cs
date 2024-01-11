@@ -61,6 +61,22 @@ public class SaveFile
         }
     }
 
+    public void RemoveFile()
+    {
+        string fullPath = Path.Combine(Application.persistentDataPath, dataFileName);
+
+        if (IsExistFile())
+        {
+            File.Delete(fullPath);
+        }
+    }
+
+    public bool IsExistFile()
+    {
+        string fullPath = Path.Combine(Application.persistentDataPath, dataFileName);
+
+        return File.Exists(fullPath);
+    }
 
 
 }

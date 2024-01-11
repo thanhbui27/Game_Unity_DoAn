@@ -575,20 +575,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f0641ccfadfa64e90ec4f0c241fc2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  speed: 50
+  _speed: 50
   chaseDistanceThreshold: 0.94
   attackDistanceThreshold: 0.15
-  _heath: 10
-  _maxHp: 10
+  _health: 5
+  _maxHp: 5
   attackDelay: 1
   passTime: 1
   _target: 1
-  isLive: 1
-  listDropItem:
-  - {fileID: 5085177692229385534, guid: 58f6500a62e68124a886eea7f7ec0626, type: 3}
-  - {fileID: 9210982322622148407, guid: b94a13840732f324aa065eff2e026a25, type: 3}
-  - {fileID: 8823090644306060715, guid: 18d0dd4688c27984b9ee3e4dbd44cd7f, type: 3}
-  _level: 1
+  _isLive: 1
+  _armor: 0
   _dame: 4
   _exp: 3
+  _level: 5
+  listDropItem:
+  - {fileID: 9210982322622148407, guid: b94a13840732f324aa065eff2e026a25, type: 3}

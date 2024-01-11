@@ -78,9 +78,13 @@ public class InventorySlot : MonoBehaviour
     public void useItem()
     {
         PlayerController pl = player.GetComponent<PlayerController>();
-
         int index = pl.playerModel.itemToBag.FindLastIndex(item => item.itemModel.ID == this.itemModel.ID);
-        pl.playerModel.ChangItemInBag(index, new ItemBag(new ItemModel(), 0, true));
+
+        if (this.quantity - 1 > 0)
+        {
+            pl.playerModel.ChangItemInBag(index, new ItemBag(itemModel, this.quantity - 1, false));
+        }
+
 
         switch (this.itemModel.ID)
         {
@@ -128,6 +132,9 @@ public class InventorySlot : MonoBehaviour
 
     public void ResetData()
     {
+        PlayerController pl = player.GetComponent<PlayerController>();
+        int index = pl.playerModel.itemToBag.FindLastIndex(item => item.itemModel.ID == this.itemModel.ID);
+        pl.playerModel.ChangItemInBag(index, new ItemBag(new ItemModel(), 0, true));
 
         borderImage.enabled = false;
         panelSelectOption.active = false;

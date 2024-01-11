@@ -101,7 +101,7 @@ MonoBehaviour:
   InventoryItem:
     IsStackable: 0
     ID: 90
-    MaxStackSize: 0
+    MaxStackSize: 1
     Name: Key Gold
     HP: 0
     Mana: 0

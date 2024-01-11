@@ -15,6 +15,24 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "OpenInfoPlayer",
+                    "type": "Button",
+                    "id": "2bf0ab8e-4a38-478e-b3d8-4eb5d7a3f56c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "OpenInventory",
+                    "type": "Button",
+                    "id": "bfda5e99-0440-47fe-9260-8fbb895607e6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Attack",
                     "type": "Button",
                     "id": "d8c99b56-8cf0-457f-831a-83f65c1a5bf4",
@@ -91,8 +109,30 @@
                 },
                 {
                     "name": "",
+                    "id": "c817c8a6-25bd-4368-90b2-936737bbddec",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "adafd660-49b6-4fc0-9881-a498abd7d734",
                     "path": "<Mouse>/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fa7314ab-5dbe-4412-a78d-bba98efbb9cf",
+                    "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -110,36 +150,21 @@
                     "action": "esc",
                     "isComposite": false,
                     "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Inventory",
-            "id": "5c71aa81-83f6-4772-8643-d7c6da842a0c",
-            "actions": [
-                {
-                    "name": "OpenInventory",
-                    "type": "Button",
-                    "id": "7f1fffc2-70ab-4ba8-be4b-23c838a54d66",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 },
                 {
-                    "name": "OpenInfoPlayer",
-                    "type": "Button",
-                    "id": "ad20b911-4204-414d-8195-576e80daa48a",
-                    "expectedControlType": "Button",
-                    "processors": "",
+                    "name": "",
+                    "id": "cb637c7a-bb98-42f6-8fee-21e477559633",
+                    "path": "<Gamepad>/buttonWest",
                     "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
+                    "processors": "",
+                    "groups": "",
+                    "action": "esc",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
                 {
                     "name": "",
-                    "id": "2dcaaeb1-e931-4139-b0c8-8a901b76d779",
+                    "id": "16718e48-c608-413e-bf32-9593c4d0f0a4",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
@@ -150,8 +175,19 @@
                 },
                 {
                     "name": "",
-                    "id": "3114d2f7-8fbd-4d5c-8a20-0a6131193d45",
+                    "id": "af73d21b-b0cf-4783-8414-14340508d82f",
                     "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OpenInfoPlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e3c62aa8-29ad-497a-8b7f-3e9867a74654",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

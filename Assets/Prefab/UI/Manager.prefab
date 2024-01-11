@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: data.game
+  autoSaveTimeSeconds: 10
 --- !u!1001 &6368346392881096365
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -6,8 +6,8 @@ public class Enemy : MonoBehaviour, IAgent
     protected GameObject Player;
     public float _speed = 50;
     public float chaseDistanceThreshold = 1f, attackDistanceThreshold = 0.3f;
-    public int _health = 10;
-    public int _maxHp = 10;
+    public int _health = 5;
+    public int _maxHp = 5;
     public float attackDelay = 1;
     public float passTime = 1;
     public bool _target = true;
@@ -20,10 +20,8 @@ public class Enemy : MonoBehaviour, IAgent
     protected Rigidbody2D rb;
     protected Collider2D collider2D;
     protected SpriteRenderer spriteRenderer;
-
     protected CanvasEnemy CanvasController;
     public EnemyModel enemyModel;
-
     public List<GameObject> listDropItem = new List<GameObject>();
 
 
@@ -63,6 +61,7 @@ public class Enemy : MonoBehaviour, IAgent
         this.enemyModel._maxHP *= lv;
         this.enemyModel._health *= lv;
         this.enemyModel._dame *= lv;
+        this.enemyModel._exp *= lv;
     }
 
     // Update is called once per frame
@@ -207,7 +206,7 @@ public class Enemy : MonoBehaviour, IAgent
                     if (agent != null)
                     {
                         Vector2 direction = (col[i].gameObject.transform.position - transform.position).normalized;
-                        direction = direction * 300;
+                        direction = direction * 2;
                         AudioManager.instance.PlaySFX("monster attack");
                         agent.OnHit(this.enemyModel._dame, direction);
                     }

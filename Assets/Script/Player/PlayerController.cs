@@ -182,6 +182,8 @@ public class PlayerController : MonoBehaviour, IAgent, IDataSaveGame
     public void Death()
     {
         Time.timeScale = 0;
+        Instantiate(EndSceen);
+        EndScreenManager.Instance.ActionGame(true);
         Destroy(gameObject);
     }
 
@@ -255,17 +257,14 @@ public class PlayerController : MonoBehaviour, IAgent, IDataSaveGame
 
     public void LoadData(GameData gameData)
     {
-        Debug.Log("load file");
         playerModel = gameData.player;
-
-        Debug.Log(gameData.player._health);
         UpdateUIInfo();
     }
 
     public void SaveData(ref GameData gameData)
     {
         Debug.Log("save file");
-        //gameData.player = playerModel;
+        gameData.player = playerModel;
 
     }
 }

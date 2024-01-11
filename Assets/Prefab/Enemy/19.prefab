@@ -160,20 +160,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f0641ccfadfa64e90ec4f0c241fc2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  speed: 50
+  _speed: 50
   chaseDistanceThreshold: 1
   attackDistanceThreshold: 0.15
-  _heath: 10
+  _health: 10
   _maxHp: 10
   attackDelay: 1
   passTime: 1
   _target: 1
-  isLive: 1
-  listDropItem: []
-  _level: 1
+  _isLive: 1
+  _armor: 0
   _dame: 3
   _exp: 3
+  _level: 3
+  listDropItem:
+  - {fileID: 8519546585944864159, guid: d8b5d2f3eb6cd2a40a5d897fdf14bc3b, type: 3}
+  - {fileID: 468414390792030083, guid: 2fb1170ada040814d82be62667df6f4b, type: 3}
+  - {fileID: 6292017646264442111, guid: 0dd2100888791454ca03e26891e33f1b, type: 3}
+  - {fileID: 6467367786138756004, guid: 017076d735346c04d96d230d50a9b3b2, type: 3}
+  - {fileID: 5085177692229385534, guid: 58f6500a62e68124a886eea7f7ec0626, type: 3}
+  - {fileID: 6295968094742018179, guid: 5e6c15232a84fb4419db96601adcef70, type: 3}
+  - {fileID: 1655837475873639804, guid: 7e4acc65318e835409aa816dec8835f3, type: 3}
+  - {fileID: 5770431581617404678, guid: ee45d67eb750b1740af505f3f4592aea, type: 3}
+  - {fileID: 4692228395321662203, guid: 919194237ec7752459de557397c5ff6f, type: 3}
+  - {fileID: 7960288904625592917, guid: 441b95436ab5690419f61e6ff30f48c2, type: 3}
+  - {fileID: 2013780344562473802, guid: aca93ea67c9d69c44a4e90789aeda6e9, type: 3}
+  - {fileID: 6265327909162848080, guid: 470a56662bc43574dbcc287aef3e2cef, type: 3}
+  - {fileID: 9155900411173320436, guid: eb61fa87bacb7984a8b07baacfba3479, type: 3}
+  - {fileID: 4712677821704931913, guid: d1ce2f75a2237ed418d6eb7e71a46493, type: 3}
+  - {fileID: 3711549738824415428, guid: 3d51aad58fc584a4fa0ae310cf5f9111, type: 3}
+  - {fileID: 9210982322622148407, guid: b94a13840732f324aa065eff2e026a25, type: 3}
+  - {fileID: 5822300847972403922, guid: 00f7ce32be12e4c4894bbc532f699a40, type: 3}
+  - {fileID: 6298528955814372671, guid: 353d91eeb73f8ca4fb2e6bff894b3b82, type: 3}
+  - {fileID: 7775244403227672115, guid: fc9971b955148624980ca41cf6712312, type: 3}
+  - {fileID: 34894805141969350, guid: 9688feca8fcc15c44862d482b386ddd0, type: 3}
+  - {fileID: 6545483419480899677, guid: c3d3ead9ba866dc4f93fb9c950b1684c, type: 3}
+  - {fileID: 611925474696084922, guid: cb4f0bb58f07ef3448c1c5fcfefe354f, type: 3}
+  - {fileID: 6251840585681635189, guid: a93423b7e1d608443869f3a041fdad61, type: 3}
+  - {fileID: 8823813173725256386, guid: 7cf724949fa0a6346b8c462097d16dff, type: 3}
 --- !u!50 &9156780774493689026
 Rigidbody2D:
   serializedVersion: 4

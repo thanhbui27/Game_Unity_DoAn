@@ -136,7 +136,7 @@ MonoBehaviour:
   InventoryItem:
     IsStackable: 1
     ID: 1
-    MaxStackSize: 0
+    MaxStackSize: 99
     Name: "V\xE0ng"
     HP: 0
     Mana: 0
