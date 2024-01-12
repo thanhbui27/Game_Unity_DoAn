@@ -23,9 +23,9 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         Scene m_Scene = SceneManager.GetActiveScene();
-        if (m_Scene.name.Equals("Start"))
+        if (m_Scene.name.Equals("Start Scenes"))
         {
-            PlayMusic(m_Scene.name);
+            PlayMusic("start");
         }
         else
         {

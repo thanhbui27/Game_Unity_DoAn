@@ -4524,6 +4524,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4360850699190891853, guid: c269e45bb183d784797b31a69955f607,
+        type: 3}
+      propertyPath: musicSound.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7e9ff135abdc0fd4890e1d7b4017fc83, type: 3}
+    - target: {fileID: 4360850699190891853, guid: c269e45bb183d784797b31a69955f607,
+        type: 3}
+      propertyPath: musicSound.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3643a9d1c81fbc749881df780640c035, type: 3}
     - target: {fileID: 5037309117902925092, guid: c269e45bb183d784797b31a69955f607,
         type: 3}
       propertyPath: m_Name
@@ -87456,6 +87466,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StartCanvasController
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326384171494493501, guid: d874bba4fb56e934286839663ce3ff74,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0009765625
       objectReference: {fileID: 0}
     - target: {fileID: 5452573094591253750, guid: d874bba4fb56e934286839663ce3ff74,
         type: 3}

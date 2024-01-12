@@ -17,7 +17,8 @@ public class PlayerController : MonoBehaviour, IAgent, IDataSaveGame
     private bool blockAttack { get; set; } = false;
     private Rigidbody2D rb;
     private Animator animator;
-    public PlayerModel playerModel { get; set; }
+    [SerializeField]
+    public PlayerModel playerModel;
     private GameData GameData;
     public bool TargetAttack { get; set; }
 

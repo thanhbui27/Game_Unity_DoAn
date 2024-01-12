@@ -10,8 +10,10 @@ public class MonsterStand : Enemy
         {
             return;
         }
-
+        // tinh khoang cach
         float distance = Vector2.Distance(Player.transform.position, transform.position);
+
+        // xac dinh vi tri player o ben phai hay trai 
         Vector3 enemyDirectionLocal = Player.transform.InverseTransformPoint(transform.position);
 
         if (enemyDirectionLocal.x < 0)
@@ -23,15 +25,17 @@ public class MonsterStand : Enemy
             spriteRenderer.flipX = true;
 
         }
-
+        // chaseDistanceThreshold khoang cach duoi theo
         if (distance < chaseDistanceThreshold)
         {
+            // attackDistanceThreshold khoang cach tan cong
             if (distance <= attackDistanceThreshold)
             {
-                // attack the player
+                // di chuyen the player
                 rb.AddForce(_speed * Vector2.zero);
+                // set animation di chuyen
                 animator.SetBool("isMoving", false);
-
+                // tan cong 
                 if (passTime >= attackDelay)
                 {
                     passTime = 0;
